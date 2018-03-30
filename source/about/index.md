@@ -8,7 +8,7 @@ type: "about"
 
 正在学习JAVA的路上，一路狂奔，欢迎分享技术。
 
-From Joycessh
+来自一个未来的攻城狮
 
 QQ: 935484773
 WECHAT: sosongho

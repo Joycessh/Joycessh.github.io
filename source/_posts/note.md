@@ -1,5 +1,5 @@
 ---
-title: 语言只是一种工具
+title: 编程语言只是工具
 comments: true
 tags:
   - note
@@ -10,7 +10,7 @@ description:
 password:
 top:
 ---
-  
+
 
 {% note %}  JAVA {% endnote %}
 
