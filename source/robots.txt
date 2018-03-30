@@ -1,0 +1,14 @@
+#hexo robots.txt
+User-agent: *
+
+Allow: /
+Allow: /archives/
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /lib/
+
+
+Sitemap: http://joycessh.xyz/search.xml
+Sitemap: http://joycessh.xyz/sitemap.xml
+Sitemap: http://joycessh.xyz/baidusitemap.xml
