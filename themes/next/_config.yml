@@ -119,9 +119,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
-scheme: Pisces
+#scheme: Pisces
 #scheme: Gemini
 
 
@@ -210,10 +210,10 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
-  onmobile: false
+  onmobile: true
 
 
 # ---------------------------------------------------------------
@@ -838,8 +838,8 @@ images: images
 fireworks: true
 
 # Online contact 
-daovoice: true
-daovoice_app_id: 2e9969b2
+#daovoice: true
+#daovoice_app_id: 2e9969b2
 
 # Theme version
 version: 5.1.4
