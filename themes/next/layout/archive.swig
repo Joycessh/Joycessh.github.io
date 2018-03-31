@@ -15,7 +15,6 @@
     <div id="posts" class="posts-collapse">
       <span class="archive-move-on"></span>
 
-      {% if theme.cheers_enabled %}
       <span class="archive-page-counter">
         {% set cheers %}
         {% set posts_length = site.posts.length %}
@@ -29,7 +28,6 @@
         {% endif %}
         {{ __('cheers.' + cheers) }}! {{ _p("counter.archive_posts", site.posts.length) }} {{ __('keep_on') }}
       </span>
-      {% endif %}
 
       {% for post in page.posts %}
 

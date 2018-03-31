@@ -1,6 +1,13 @@
 {% if page.comments %}
 
-  {% if theme.facebook_sdk.enable and theme.facebook_comments_plugin.enable %}
+  {% if (theme.duoshuo and theme.duoshuo.shortname) or theme.duoshuo_shortname %}
+    <div class="comments" id="comments">
+      <div class="ds-thread" data-thread-key="{{ page.path }}"
+           data-title="{{ page.title }}" data-url="{{ page.permalink }}">
+      </div>
+    </div>
+
+  {% elseif theme.facebook_sdk.enable and theme.facebook_comments_plugin.enable %}
     <div class="comments" id="comments">
       <div class="fb-comments"
            data-href="{{ page.permalink }}"
@@ -40,7 +47,7 @@
       <div id="lv-container" data-id="city" data-uid="{{ theme.livere_uid }}"></div>
     </div>
 
-  {% elseif theme.changyan.enable and theme.changyan.appid and theme.changyan.appkey %}
+  {% elseif theme.changyan.appid and theme.changyan.appkey %}
     <div class="comments" id="comments">
       <div id="SOHUCS"></div>
     </div>
@@ -55,7 +62,7 @@
       {% endif %}
     </div>
 
-  {% elseif theme.valine.enable and theme.valine.appid and theme.valine.appkey %}
+  {% elseif theme.valine.appid and theme.valine.appkey %}
     <div class="comments" id="comments">
     </div>
   {% endif %}
