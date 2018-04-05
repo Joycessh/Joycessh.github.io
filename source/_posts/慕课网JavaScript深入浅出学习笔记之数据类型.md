@@ -1,4 +1,14 @@
 
+---
+title: 慕课网JavaScript深入浅出学习笔记之数据类型
+tags:
+  - JavaScript
+comments: true
+date: 2018-04-01 11:30:40
+categories: JavaScript
+password: 
+---
+
 # JavaScript数据类型
 
 ## 六种数据类型(五种原始类型，一种对象类型)
