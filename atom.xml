@@ -7,7 +7,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joycessh.xyz/"/>
-  <updated>2018-04-01T05:30:10.497Z</updated>
+  <updated>2018-04-05T16:02:04.008Z</updated>
   <id>http://joycessh.xyz/</id>
   
   <author>
@@ -16,6 +16,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://joycessh.xyz/%E6%85%95%E8%AF%BE%E7%BD%91JavaScript%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html"/>
+    <id>http://joycessh.xyz/慕课网JavaScript深入浅出学习笔记之数据类型.html</id>
+    <published>2018-04-05T16:02:04.008Z</published>
+    <updated>2018-04-05T16:02:04.008Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;JavaScript数据类型&quot;&gt;&lt;a href=&quot;#JavaScript数据类型&quot; class=&quot;headerlink&quot; title=&quot;JavaScript数据类型&quot;&gt;&lt;/a&gt;JavaScript数据类型&lt;/h1&gt;&lt;h2
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>我是如何使用hexo+github pages搭建个人博客</title>
