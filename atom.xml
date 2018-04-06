@@ -7,7 +7,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joycessh.xyz/"/>
-  <updated>2018-04-01T05:30:10.497Z</updated>
+  <updated>2018-04-06T13:03:22.205Z</updated>
   <id>http://joycessh.xyz/</id>
   
   <author>
@@ -18,20 +18,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我是如何使用hexo+github pages搭建个人博客</title>
-    <link href="http://joycessh.xyz/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"/>
-    <id>http://joycessh.xyz/我是如何使用hexo-github-pages搭建个人博客.html</id>
-    <published>2018-04-01T03:30:40.000Z</published>
-    <updated>2018-04-01T05:30:10.497Z</updated>
+    <title>慕课网JavaScript深入浅出学习笔记之表达式和运算符</title>
+    <link href="http://joycessh.xyz/%E6%85%95%E8%AF%BE%E7%BD%91JavaScript%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6.html"/>
+    <id>http://joycessh.xyz/慕课网JavaScript深入浅出学习笔记之表达式和运算符.html</id>
+    <published>2018-04-06T13:00:18.000Z</published>
+    <updated>2018-04-06T13:03:22.205Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+      &lt;h1 id=&quot;JavaScript表达式和运算符&quot;&gt;&lt;a href=&quot;#JavaScript表达式和运算符&quot; class=&quot;headerlink&quot; title=&quot;JavaScript表达式和运算符&quot;&gt;&lt;/a&gt;JavaScript表达式和运算符&lt;/h1&gt;&lt;h2 id=&quot;表达式&quot;&gt;&lt;a href=&quot;#表达式&quot; class=&quot;headerlink&quot; title=&quot;表达式&quot;&gt;&lt;/a&gt;表达式&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;表达式是一种JS短语，可使JS解释器用来产生一个值。——《JavaScript权威指南》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;原始表达式&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;常量、直接量 &lt;code&gt;345&lt;/code&gt;, &lt;code&gt;string&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;关键字 &lt;code&gt;null&lt;/code&gt;，&lt;code&gt;this&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;变量 &lt;code&gt;a, b, c&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;复合表达式 # 原始表达式+运算符 &lt;code&gt;a + b&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;数组、对象的初始化表达式&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
+      <category term="JavaScript" scheme="http://joycessh.xyz/categories/JavaScript/"/>
     
-      <category term="Hexo" scheme="http://joycessh.xyz/tags/Hexo/"/>
+    
+      <category term="JavaScript" scheme="http://joycessh.xyz/tags/JavaScript/"/>
     
   </entry>
   
@@ -58,6 +75,24 @@
     
     
       <category term="JavaScript" scheme="http://joycessh.xyz/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>我是如何使用hexo+github pages搭建个人博客</title>
+    <link href="http://joycessh.xyz/%E6%88%91%E6%98%AF%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2.html"/>
+    <id>http://joycessh.xyz/我是如何使用hexo-github-pages搭建个人博客.html</id>
+    <published>2018-04-01T03:30:40.000Z</published>
+    <updated>2018-04-01T05:30:10.497Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Hexo" scheme="http://joycessh.xyz/tags/Hexo/"/>
     
   </entry>
   
