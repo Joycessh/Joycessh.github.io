@@ -36,7 +36,7 @@ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（�
 - 使用`git clone git@github.com:USERNAME/USERNAME.github.io.git`拷贝仓库，此时为默认分支hexo
 
 
-- USERNAME.github.io.git目录一般有.gtik、_comfig.yml和index.md，把.git文件复制出来，删除掉 _comfig.yml和index.md文件。此时USERNAME.github.io.git目录为空，执行`hexo init`（建立博客所需的文件）、`npm install` （安装依赖包），把之前复制出来.git文件黏贴回去进行覆盖
+- USERNAME.github.io.git目录一般有.git、_comfig.yml和index.md，把.git文件复制出来，删除掉 _comfig.yml和index.md文件。此时USERNAME.github.io.git目录为空，执行`hexo init`（建立博客所需的文件）、`npm install` （安装依赖包），把之前复制出来.git文件黏贴回去进行覆盖
 
 
 >>到这里，Hexo博客已经搭建好了本地的服务，执行命令`hexo g`和`hexo s --debug`在浏览器中输入localhost:4000就可以看到博客主页了
@@ -89,7 +89,7 @@ $ git clone https://github.com/theme-next/hexo-theme-next themes/next
 theme: next
 
 ```
-- 主题的配置是在/themes/yelee/_config.yml文件里面
+- 主题的配置是在/themes/next/_config.yml文件里面
 
 ### Hexo常用命令：
 
