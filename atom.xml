@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/css" href="rss.css" ?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Joycessh&#39;s Blog</title>
+  <title>Joycessh&#39; Blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -57,7 +57,7 @@
     <link href="http://joycessh.xyz/%E6%85%95%E8%AF%BE%E7%BD%91JavaScript%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E4%B9%8B%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B.html"/>
     <id>http://joycessh.xyz/慕课网JavaScript深入浅出学习笔记之数据类型.html</id>
     <published>2018-04-01T03:30:40.000Z</published>
-    <updated>2018-04-05T16:09:16.621Z</updated>
+    <updated>2018-05-31T14:39:03.172Z</updated>
     
     <summary type="html">
     
@@ -101,45 +101,14 @@
     <link href="http://joycessh.xyz/%E5%BC%80%E5%A7%8B%E6%88%91%E7%9A%84%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2%E4%B9%8B%E6%97%85.html"/>
     <id>http://joycessh.xyz/开始我的独立博客之旅.html</id>
     <published>2018-03-29T17:03:23.000Z</published>
-    <updated>2018-03-30T16:30:09.894Z</updated>
+    <updated>2018-05-31T14:38:12.915Z</updated>
     
     <summary type="html">
     
-      &lt;blockquote class=&quot;blockquote-center&quot;&gt;&lt;p&gt;所谓博客，不过是孤芳自赏。 &lt;/p&gt;
-&lt;/blockquote&gt;
+      &lt;p&gt;所谓博客，不过是孤芳自赏。&lt;/p&gt;
     
     </summary>
     
-    
-  </entry>
-  
-  <entry>
-    <title>编程语言只是工具</title>
-    <link href="http://joycessh.xyz/note.html"/>
-    <id>http://joycessh.xyz/note.html</id>
-    <published>2018-03-28T17:25:57.000Z</published>
-    <updated>2018-03-30T15:39:43.944Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;div class=&quot;note &quot;&gt;&lt;p&gt;JAVA &lt;/p&gt;&lt;/div&gt;
-&lt;div class=&quot;note default&quot;&gt;&lt;p&gt;PYTHON &lt;/p&gt;&lt;/div&gt;
-
-&lt;div class=&quot;note primary&quot;&gt;&lt;p&gt;C++ &lt;/p&gt;&lt;/div&gt;
-&lt;div
-        
-      
-    
-    </summary>
-    
-      <category term="language" scheme="http://joycessh.xyz/categories/language/"/>
-    
-    
-      <category term="note" scheme="http://joycessh.xyz/tags/note/"/>
     
   </entry>
   
