@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Joycessh's Blog
+title: Joycessh
 subtitle: 
 description: Life is a journey. What we should care about is not where it's headed but what we see and how we feel.
 keywords: Hexo | Blog
@@ -97,7 +97,7 @@ feed:
   content_limit: 140
   content_limit_delim: ' '
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: gal
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html

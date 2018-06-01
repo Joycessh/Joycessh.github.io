@@ -84,7 +84,7 @@ str.length //str为基本类型，没有属性。当str访问length属性时，j
 
 ### typeof
 
-{%note danger%}适合检测基本类型和function，遇到null失效{%endnote%}
+适合检测基本类型和function，遇到null失效
 
 ```
 typeof 100    "number"
@@ -103,7 +103,7 @@ typeof null         "object" #返回object而不是null，是由于历史原因
 instanceof操作符是基于原型链去判断，用法：`obj instanceof Object`
 注意： 不同的window或iframe之间的对象类型检测不能使用instanceof！
 
-{%note danger%}可以用来检测自定义对象以及原生对象{%endnote%}
+可以用来检测自定义对象以及原生对象
 
 ```
 [1, 2] instanceof Array === true
@@ -113,7 +113,7 @@ new Object() instanceof Array ===false
 
 ### Object.prototype.toString.apply()
 
-{%note%}适合内置对象和基本类型，用来检测null会存在兼容性问题{%endnote%}
+适合内置对象和基本类型，用来检测null会存在兼容性问题
 
 ```
 Object.prototype.toString.apply([]); === "[object Array]"
