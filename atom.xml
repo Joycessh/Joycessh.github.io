@@ -7,7 +7,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joycessh.xyz/"/>
-  <updated>2018-09-21T17:07:25.282Z</updated>
+  <updated>2018-09-21T17:15:29.858Z</updated>
   <id>http://joycessh.xyz/</id>
   
   <author>
@@ -22,18 +22,11 @@
     <link href="http://joycessh.xyz/virtualbox%E5%A4%9A%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B9%8B%E9%97%B4%E9%80%9A%E4%BF%A1.html"/>
     <id>http://joycessh.xyz/virtualbox多虚拟机之间通信.html</id>
     <published>2018-09-21T16:41:28.000Z</published>
-    <updated>2018-09-21T17:07:25.282Z</updated>
+    <updated>2018-09-21T17:15:29.858Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h1 id=&quot;virtualbox多虚拟机之间通信&quot;&gt;&lt;a href=&quot;#virtualbox多虚拟机之间通信&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;通过Bridged Adapter模式实现virtualbox多虚拟机之间通信&lt;/p&gt;
     
     </summary>
     

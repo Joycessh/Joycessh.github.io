@@ -251,8 +251,13 @@
         </center>
     </div>
     <div class="content-article">
-        <a id="more"></a>
-<h1 id="virtualbox多虚拟机之间通信"><a href="#virtualbox多虚拟机之间通信" class="headerlink" title="virtualbox多虚拟机之间通信"></a>virtualbox多虚拟机之间通信</h1><h2 id="NAT-网络地址转换模式"><a href="#NAT-网络地址转换模式" class="headerlink" title="NAT(网络地址转换模式)"></a>NAT(网络地址转换模式)</h2><h3 id="使用NAT模式，就是让虚拟系统借助NAT-网络地址转换-功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP-IP配置信息是由virtualbox-NAT-虚拟网络的DHCP服务器提供的-NAT模式下只能单向访问-网络中的任何机器-包括宿主机-无法通过网络访问到虚拟机-虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。"><a href="#使用NAT模式，就是让虚拟系统借助NAT-网络地址转换-功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP-IP配置信息是由virtualbox-NAT-虚拟网络的DHCP服务器提供的-NAT模式下只能单向访问-网络中的任何机器-包括宿主机-无法通过网络访问到虚拟机-虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。" class="headerlink" title="使用NAT模式，就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP/IP配置信息是由virtualbox(NAT)虚拟网络的DHCP服务器提供的.NAT模式下只能单向访问,网络中的任何机器(包括宿主机)无法通过网络访问到虚拟机.虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。"></a>使用NAT模式，就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP/IP配置信息是由virtualbox(NAT)虚拟网络的DHCP服务器提供的.NAT模式下只能单向访问,网络中的任何机器(包括宿主机)无法通过网络访问到虚拟机.虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。</h3><h2 id="Bridged-Adapter模式"><a href="#Bridged-Adapter模式" class="headerlink" title="Bridged Adapter模式"></a>Bridged Adapter模式</h2><h3 id="在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信"><a href="#在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信" class="headerlink" title="在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信"></a>在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信</h3><h3 id="它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样"><a href="#它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样" class="headerlink" title="它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样"></a>它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样</h3><h3 id="所以虚拟机可以跟主机-网络中的其他机器-虚拟机之间-彼此可以通过各自IP相互访问"><a href="#所以虚拟机可以跟主机-网络中的其他机器-虚拟机之间-彼此可以通过各自IP相互访问" class="headerlink" title="所以虚拟机可以跟主机,网络中的其他机器,虚拟机之间,彼此可以通过各自IP相互访问"></a>所以虚拟机可以跟主机,网络中的其他机器,虚拟机之间,彼此可以通过各自IP相互访问</h3><h2 id="Internal内网模式"><a href="#Internal内网模式" class="headerlink" title="Internal内网模式"></a>Internal内网模式</h2><h2 id="Host-only-Adapter模式"><a href="#Host-only-Adapter模式" class="headerlink" title="Host-only Adapter模式"></a>Host-only Adapter模式</h2>
+        <p>通过Bridged Adapter模式实现virtualbox多虚拟机之间通信</p>
+<a id="more"></a>
+<h1 id="virtualbox多虚拟机之间通信"><a href="#virtualbox多虚拟机之间通信" class="headerlink" title="virtualbox多虚拟机之间通信"></a>virtualbox多虚拟机之间通信</h1><h2 id="NAT-网络地址转换模式"><a href="#NAT-网络地址转换模式" class="headerlink" title="NAT(网络地址转换模式)"></a>NAT(网络地址转换模式)</h2><h3 id="使用NAT模式，就是让虚拟系统借助NAT-网络地址转换-功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP-IP配置信息是由virtualbox-NAT-虚拟网络的DHCP服务器提供的-NAT模式下只能单向访问-网络中的任何机器-包括宿主机-无法通过网络访问到虚拟机-虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。"><a href="#使用NAT模式，就是让虚拟系统借助NAT-网络地址转换-功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP-IP配置信息是由virtualbox-NAT-虚拟网络的DHCP服务器提供的-NAT模式下只能单向访问-网络中的任何机器-包括宿主机-无法通过网络访问到虚拟机-虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。" class="headerlink" title="使用NAT模式，就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP/IP配置信息是由virtualbox(NAT)虚拟网络的DHCP服务器提供的.NAT模式下只能单向访问,网络中的任何机器(包括宿主机)无法通过网络访问到虚拟机.虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。"></a>使用NAT模式，就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP/IP配置信息是由virtualbox(NAT)虚拟网络的DHCP服务器提供的.NAT模式下只能单向访问,网络中的任何机器(包括宿主机)无法通过网络访问到虚拟机.虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。</h3><h2 id="Bridged-Adapter模式"><a href="#Bridged-Adapter模式" class="headerlink" title="Bridged Adapter模式"></a>Bridged Adapter模式</h2><h3 id="在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信"><a href="#在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信" class="headerlink" title="在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信"></a>在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信</h3><h3 id="它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样"><a href="#它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样" class="headerlink" title="它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样"></a>它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样</h3><h3 id="所以虚拟机可以跟主机-网络中的其他机器-虚拟机之间-彼此可以通过各自IP相互访问"><a href="#所以虚拟机可以跟主机-网络中的其他机器-虚拟机之间-彼此可以通过各自IP相互访问" class="headerlink" title="所以虚拟机可以跟主机,网络中的其他机器,虚拟机之间,彼此可以通过各自IP相互访问"></a>所以虚拟机可以跟主机,网络中的其他机器,虚拟机之间,彼此可以通过各自IP相互访问</h3><h3 id="多虚拟机之间可以通过Bridged-Adapter模式进行通信"><a href="#多虚拟机之间可以通过Bridged-Adapter模式进行通信" class="headerlink" title="多虚拟机之间可以通过Bridged Adapter模式进行通信"></a>多虚拟机之间可以通过Bridged Adapter模式进行通信</h3><h2 id="Internal内网模式"><a href="#Internal内网模式" class="headerlink" title="Internal内网模式"></a>Internal内网模式</h2><ul>
+<li>(略-_-,没弄过)<h2 id="Host-only-Adapter模式"><a href="#Host-only-Adapter模式" class="headerlink" title="Host-only Adapter模式"></a>Host-only Adapter模式</h2></li>
+<li>(略-_-)</li>
+</ul>
+
     </div>
 </article>
 
@@ -442,11 +447,11 @@
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/Hexo/" style="font-size: 16.91817984212014px;" class="tag-cloud-link">Hexo</a>
+    <a href="/tags/Hexo/" style="font-size: 17.08348833442906px;" class="tag-cloud-link">Hexo</a>
     
-    <a href="/tags/virtualbox/" style="font-size: 13.958507198721602px;" class="tag-cloud-link">virtualbox</a>
+    <a href="/tags/virtualbox/" style="font-size: 14.469815573983546px;" class="tag-cloud-link">virtualbox</a>
     
-    <a href="/tags/JavaScript/" style="font-size: 17.914419962461313px;" class="tag-cloud-link">JavaScript</a>
+    <a href="/tags/JavaScript/" style="font-size: 8.665728352664056px;" class="tag-cloud-link">JavaScript</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
