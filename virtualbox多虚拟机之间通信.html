@@ -12,7 +12,7 @@
     
     
     
-    <title>tags: Hexo | Joycessh</title>
+    <title>virtualbox多虚拟机之间通信 | Joycessh</title>
     <link href=”http://joycessh.xyz“ rel=”prefetch” />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -198,19 +198,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <article class="article well article-body" id="article-tag">
+                    
+<article class="article well article-body" id="article">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://joycessh.xyz">Joycessh</a>
         >
-        <span>标签</span>
+        <span>virtualbox多虚拟机之间通信</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/tags/Hexo/index.html">Hexo</a>
+                <a href="/virtualbox多虚拟机之间通信.html">virtualbox多虚拟机之间通信</a>
             </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/virtualbox/">virtualbox</a>
+                
+            </span>
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2018-09-22
+            </span>
+            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -218,24 +233,39 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/tags/Hexo/index.html">Hexo</a>
+                    <a href="/virtualbox多虚拟机之间通信.html">virtualbox多虚拟机之间通信</a>
                 </h4>
             </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2018-09-22
+            </p>
+            <p>
+                
+                <i class="fa fa-tags"></i>
+                
+                <a href="/tags/virtualbox/">virtualbox</a>
+                
+                
+                
+            </p>
         </center>
     </div>
-    <div class="content-article" style="margin-top: 30px;">
-        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
-            
-            <a href="/我是如何使用hexo-github-pages搭建个人博客.html">我是如何使用hexo+github pages搭建个人博客</a>
-            <br>
-            
-            <a href="/hello-world.html">Hello World</a>
-            <br>
-            
-            
-        </div>
+    <div class="content-article">
+        <a id="more"></a>
+<h1 id="virtualbox多虚拟机之间通信"><a href="#virtualbox多虚拟机之间通信" class="headerlink" title="virtualbox多虚拟机之间通信"></a>virtualbox多虚拟机之间通信</h1><h2 id="NAT-网络地址转换模式"><a href="#NAT-网络地址转换模式" class="headerlink" title="NAT(网络地址转换模式)"></a>NAT(网络地址转换模式)</h2><h3 id="使用NAT模式，就是让虚拟系统借助NAT-网络地址转换-功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP-IP配置信息是由virtualbox-NAT-虚拟网络的DHCP服务器提供的-NAT模式下只能单向访问-网络中的任何机器-包括宿主机-无法通过网络访问到虚拟机-虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。"><a href="#使用NAT模式，就是让虚拟系统借助NAT-网络地址转换-功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP-IP配置信息是由virtualbox-NAT-虚拟网络的DHCP服务器提供的-NAT模式下只能单向访问-网络中的任何机器-包括宿主机-无法通过网络访问到虚拟机-虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。" class="headerlink" title="使用NAT模式，就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP/IP配置信息是由virtualbox(NAT)虚拟网络的DHCP服务器提供的.NAT模式下只能单向访问,网络中的任何机器(包括宿主机)无法通过网络访问到虚拟机.虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。"></a>使用NAT模式，就是让虚拟系统借助NAT(网络地址转换)功能，通过宿主机器所在的网络来访问公网。NAT模式下的虚拟系统的TCP/IP配置信息是由virtualbox(NAT)虚拟网络的DHCP服务器提供的.NAT模式下只能单向访问,网络中的任何机器(包括宿主机)无法通过网络访问到虚拟机.虚拟机与虚拟机各自完全独立，相互间无法通过网络访问彼此。</h3><h2 id="Bridged-Adapter模式"><a href="#Bridged-Adapter模式" class="headerlink" title="Bridged Adapter模式"></a>Bridged Adapter模式</h2><h3 id="在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信"><a href="#在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信" class="headerlink" title="在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信"></a>在桥接模式下，你需要手工为虚拟系统配置IP地址、子网掩码，而且还要和宿主机器处于同一网段，这样虚拟系统才能和宿主机器进行通信</h3><h3 id="它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样"><a href="#它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样" class="headerlink" title="它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样"></a>它使得虚拟机能被分配到一个网络中独立的IP，所有网络功能完全和在网络中的真实机器一样</h3><h3 id="所以虚拟机可以跟主机-网络中的其他机器-虚拟机之间-彼此可以通过各自IP相互访问"><a href="#所以虚拟机可以跟主机-网络中的其他机器-虚拟机之间-彼此可以通过各自IP相互访问" class="headerlink" title="所以虚拟机可以跟主机,网络中的其他机器,虚拟机之间,彼此可以通过各自IP相互访问"></a>所以虚拟机可以跟主机,网络中的其他机器,虚拟机之间,彼此可以通过各自IP相互访问</h3><h2 id="Internal内网模式"><a href="#Internal内网模式" class="headerlink" title="Internal内网模式"></a>Internal内网模式</h2><h2 id="Host-only-Adapter模式"><a href="#Host-only-Adapter模式" class="headerlink" title="Host-only Adapter模式"></a>Host-only Adapter模式</h2>
     </div>
 </article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = 'virtualbox多虚拟机之间通信'
+    }
+</script>
+
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -400,23 +430,23 @@
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
                 <li class="">
-                    <a href="/tags/Hexo/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/virtualbox多虚拟机之间通信.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 <li class="">
-                    <a href="/tags/Hexo/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/virtualbox多虚拟机之间通信.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 <li class="">
-                    <a href="/tags/Hexo/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/virtualbox多虚拟机之间通信.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/Hexo/" style="font-size: 10.843690294717867px;" class="tag-cloud-link">Hexo</a>
+    <a href="/tags/Hexo/" style="font-size: 16.91817984212014px;" class="tag-cloud-link">Hexo</a>
     
-    <a href="/tags/virtualbox/" style="font-size: 15.012059471790197px;" class="tag-cloud-link">virtualbox</a>
+    <a href="/tags/virtualbox/" style="font-size: 13.958507198721602px;" class="tag-cloud-link">virtualbox</a>
     
-    <a href="/tags/JavaScript/" style="font-size: 8.075006309394757px;" class="tag-cloud-link">JavaScript</a>
+    <a href="/tags/JavaScript/" style="font-size: 17.914419962461313px;" class="tag-cloud-link">JavaScript</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
@@ -525,7 +555,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = ''
+      window.commentConfig.id = 'Sat Sep 22 2018 00:41:28 GMT+0800'
       window.commentConfig.owner = 'Joycessh'
       window.commentConfig.repo = 'Joycessh.github.io'
       window.commentConfig.client_id = 'fa0ea6a5655205183eab'
@@ -533,7 +563,7 @@
       window.commentConfig.redirect_uri = ''
     } else {
       window.commentConfig = {
-      	id: '',
+      	id: 'Sat Sep 22 2018 00:41:28 GMT+0800',
         owner: 'Joycessh',
         repo: 'Joycessh.github.io',
         client_id: 'fa0ea6a5655205183eab',

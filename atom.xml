@@ -7,7 +7,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joycessh.xyz/"/>
-  <updated>2018-09-21T12:47:35.768Z</updated>
+  <updated>2018-09-21T17:07:25.282Z</updated>
   <id>http://joycessh.xyz/</id>
   
   <author>
@@ -16,6 +16,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>virtualbox多虚拟机之间通信</title>
+    <link href="http://joycessh.xyz/virtualbox%E5%A4%9A%E8%99%9A%E6%8B%9F%E6%9C%BA%E4%B9%8B%E9%97%B4%E9%80%9A%E4%BF%A1.html"/>
+    <id>http://joycessh.xyz/virtualbox多虚拟机之间通信.html</id>
+    <published>2018-09-21T16:41:28.000Z</published>
+    <updated>2018-09-21T17:07:25.282Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h1 id=&quot;virtualbox多虚拟机之间通信&quot;&gt;&lt;a href=&quot;#virtualbox多虚拟机之间通信&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="virtualbox" scheme="http://joycessh.xyz/categories/virtualbox/"/>
+    
+    
+      <category term="virtualbox" scheme="http://joycessh.xyz/tags/virtualbox/"/>
+    
+  </entry>
   
   <entry>
     <title>使用virtualbox安装centos6.5设置共享文件夹</title>
