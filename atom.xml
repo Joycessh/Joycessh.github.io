@@ -7,7 +7,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joycessh.xyz/"/>
-  <updated>2018-09-21T12:32:08.000Z</updated>
+  <updated>2018-09-21T12:47:35.768Z</updated>
   <id>http://joycessh.xyz/</id>
   
   <author>
@@ -18,24 +18,22 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>使用virtualbox安装centos6.5设置共享文件夹</title>
     <link href="http://joycessh.xyz/%E4%BD%BF%E7%94%A8virtualbox%E5%AE%89%E8%A3%85centos6.5%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9.html"/>
     <id>http://joycessh.xyz/使用virtualbox安装centos6.5设置共享文件夹.html</id>
-    <published>2018-09-21T12:36:02.255Z</published>
-    <updated>2018-09-21T12:32:08.000Z</updated>
+    <published>2018-09-21T12:41:44.000Z</published>
+    <updated>2018-09-21T12:47:35.768Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;使用virtualbox安装centos6-5设置共享文件夹&quot;&gt;&lt;a href=&quot;#使用virtualbox安装centos6-5设置共享文件夹&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;使用virtualbox安装centos6.5设置共享文件夹时遇到一些问题&lt;br&gt;下面是我实践总结出来的方法&lt;/p&gt;
     
     </summary>
     
+      <category term="virtualbox" scheme="http://joycessh.xyz/categories/virtualbox/"/>
+    
+    
+      <category term="virtualbox" scheme="http://joycessh.xyz/tags/virtualbox/"/>
     
   </entry>
   
