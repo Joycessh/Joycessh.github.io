@@ -12,7 +12,7 @@
     
     
     
-    <title>404 | Joycessh</title>
+    <title>Joycessh</title>
     <link href=”http://joycessh.xyz“ rel=”prefetch” />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -190,10 +190,77 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    <!-- 搜索页面(尽可能接近ZanBlog搜索功能) -->
+                    
+<article class="article well article-body" id="article">
+    <div class="breadcrumb">
+        <i class="fa fa-home"></i>
+        <a href="http://joycessh.xyz">Joycessh</a>
+        >
+        <span></span>
+    </div>
+    <!-- 大型设备详细文章 -->
+    <div class="hidden-xs">
+        <div class="title-article">
+            <h1>
+                <a href="/使用virtualbox安装centos6.5设置共享文件夹.html"></a>
+            </h1>
+        </div>
+        <div class="tag-article">
+            
+            <span class="label label-gal">
+                <i class="fa fa-calendar"></i> 2018-09-21
+            </span>
+            
+        </div>
+    </div>
+    <!-- 小型设备详细文章 -->
+    <div class="visible-xs">
+        <center>
+            <div class="title-article">
+                <h4>
+                    <a href="/使用virtualbox安装centos6.5设置共享文件夹.html"></a>
+                </h4>
+            </div>
+            <p>
+                <i class="fa fa-calendar"></i> 2018-09-21
+            </p>
+            <p>
+                
+                
+            </p>
+        </center>
+    </div>
+    <div class="content-article">
+        <h1 id="使用virtualbox安装centos6-5设置共享文件夹"><a href="#使用virtualbox安装centos6-5设置共享文件夹" class="headerlink" title="使用virtualbox安装centos6.5设置共享文件夹"></a>使用virtualbox安装centos6.5设置共享文件夹</h1><h2 id="virtualbox设置共享文件夹-需要安装增强工具VBoxGuestAdditions"><a href="#virtualbox设置共享文件夹-需要安装增强工具VBoxGuestAdditions" class="headerlink" title="virtualbox设置共享文件夹,需要安装增强工具VBoxGuestAdditions"></a>virtualbox设置共享文件夹,需要安装增强工具VBoxGuestAdditions</h2><h3 id="点击工具栏的Devices-选择Insert-Guest-Additions-CDImage-下载安装"><a href="#点击工具栏的Devices-选择Insert-Guest-Additions-CDImage-下载安装" class="headerlink" title="点击工具栏的Devices,选择Insert Guest Additions CDImage,下载安装"></a>点击工具栏的Devices,选择Insert Guest Additions CDImage,下载安装</h3><h3 id="在安装时提示错误-the-headers-of-current-running-kernel-was-not-fount…"><a href="#在安装时提示错误-the-headers-of-current-running-kernel-was-not-fount…" class="headerlink" title="在安装时提示错误,the headers of current running kernel was not fount…"></a>在安装时提示错误,the headers of current running kernel was not fount…</h3><ul>
+<li><code>rpm -q gcc</code> 提示gcc未安装,安装gcc <code>yum install gcc</code></li>
+<li>查看内核版本命令 <code>uname -a</code></li>
+</ul>
+<h3 id="安装kernel-kernel-devel-kernel-headers"><a href="#安装kernel-kernel-devel-kernel-headers" class="headerlink" title="安装kernel kernel-devel kernel-headers"></a>安装kernel kernel-devel kernel-headers</h3><ul>
+<li><code>yum install kernel kernel-devel kernel-headers</code></li>
+<li>升级内核 <code>yum update kernel</code> ,重启系统,使用新的内核</li>
+</ul>
+<h3 id="安装增强工具后-挂载共享文件"><a href="#安装增强工具后-挂载共享文件" class="headerlink" title="安装增强工具后,挂载共享文件"></a>安装增强工具后,挂载共享文件</h3><ul>
+<li><code>mount -t vboxsf shareFile /mnt/Linux_share</code></li>
+</ul>
+<h3 id="共享成功"><a href="#共享成功" class="headerlink" title="共享成功"></a>共享成功</h3><h2 id="系统开机-自动挂载共享文件-下面两种方法都已成功自动挂载"><a href="#系统开机-自动挂载共享文件-下面两种方法都已成功自动挂载" class="headerlink" title="系统开机,自动挂载共享文件,下面两种方法都已成功自动挂载"></a>系统开机,自动挂载共享文件,下面两种方法都已成功自动挂载</h2><h3 id="第一种方法-修改-etc-profile配置文件-在最后一行添加"><a href="#第一种方法-修改-etc-profile配置文件-在最后一行添加" class="headerlink" title="第一种方法: 修改/etc/profile配置文件,在最后一行添加"></a>第一种方法: 修改/etc/profile配置文件,在最后一行添加</h3><ul>
+<li><code>mount -t vboxsf shareFile /mnt/Linux_share</code></li>
+</ul>
+<h3 id="第二种方法-修改-etc-rc-local文件-在最后一行添加"><a href="#第二种方法-修改-etc-rc-local文件-在最后一行添加" class="headerlink" title="第二种方法: 修改/etc/rc.local文件,在最后一行添加"></a>第二种方法: 修改/etc/rc.local文件,在最后一行添加</h3><ul>
+<li><code>mount -t vboxsf shareFile /mnt/Linux_share</code></li>
+</ul>
 
-<!-- 404 自定义页面 -->
-<!-- 有其他想自定义的page在这里添加判断条件, 并且写好对应的模板渲染文件 -->
+    </div>
+</article>
+
+
+<div id="comments-template"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script>
+	if(!window.commentConfig) {
+      window.commentConfig = {}
+      window.commentConfig.title = ''
+    }
+</script>
 
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
@@ -347,21 +414,21 @@
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
                 <li class="">
-                    <a href="/404/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/使用virtualbox安装centos6.5设置共享文件夹.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 <li class="">
-                    <a href="/404/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/使用virtualbox安装centos6.5设置共享文件夹.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 <li class="">
-                    <a href="/404/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/使用virtualbox安装centos6.5设置共享文件夹.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/JavaScript/" style="font-size: 12.785433393449757px;" class="tag-cloud-link">JavaScript</a>
+    <a href="/tags/JavaScript/" style="font-size: 15.7726826906216px;" class="tag-cloud-link">JavaScript</a>
     
-    <a href="/tags/Hexo/" style="font-size: 8.336906684707028px;" class="tag-cloud-link">Hexo</a>
+    <a href="/tags/Hexo/" style="font-size: 11.683404185118661px;" class="tag-cloud-link">Hexo</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
@@ -470,7 +537,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = 'Thu May 31 2018 22:42:55 GMT+0800'
+      window.commentConfig.id = 'Fri Sep 21 2018 20:36:02 GMT+0800'
       window.commentConfig.owner = 'Joycessh'
       window.commentConfig.repo = 'Joycessh.github.io'
       window.commentConfig.client_id = 'fa0ea6a5655205183eab'
@@ -478,7 +545,7 @@
       window.commentConfig.redirect_uri = ''
     } else {
       window.commentConfig = {
-      	id: 'Thu May 31 2018 22:42:55 GMT+0800',
+      	id: 'Fri Sep 21 2018 20:36:02 GMT+0800',
         owner: 'Joycessh',
         repo: 'Joycessh.github.io',
         client_id: 'fa0ea6a5655205183eab',

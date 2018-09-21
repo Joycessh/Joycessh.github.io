@@ -7,7 +7,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joycessh.xyz/"/>
-  <updated>2018-04-06T13:03:22.205Z</updated>
+  <updated>2018-09-21T12:32:08.000Z</updated>
   <id>http://joycessh.xyz/</id>
   
   <author>
@@ -16,6 +16,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://joycessh.xyz/%E4%BD%BF%E7%94%A8virtualbox%E5%AE%89%E8%A3%85centos6.5%E8%AE%BE%E7%BD%AE%E5%85%B1%E4%BA%AB%E6%96%87%E4%BB%B6%E5%A4%B9.html"/>
+    <id>http://joycessh.xyz/使用virtualbox安装centos6.5设置共享文件夹.html</id>
+    <published>2018-09-21T12:36:02.255Z</published>
+    <updated>2018-09-21T12:32:08.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;使用virtualbox安装centos6-5设置共享文件夹&quot;&gt;&lt;a href=&quot;#使用virtualbox安装centos6-5设置共享文件夹&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>慕课网JavaScript深入浅出学习笔记之表达式和运算符</title>
