@@ -7,7 +7,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joycessh.xyz/"/>
-  <updated>2018-09-27T09:06:31.716Z</updated>
+  <updated>2018-09-28T13:35:16.424Z</updated>
   <id>http://joycessh.xyz/</id>
   
   <author>
@@ -16,6 +16,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>linux学习之tar命令详解</title>
+    <link href="http://joycessh.xyz/linux%E5%AD%A6%E4%B9%A0%E4%B9%8Btar%E5%91%BD%E4%BB%A4%E8%AF%A6%E8%A7%A3.html"/>
+    <id>http://joycessh.xyz/linux学习之tar命令详解.html</id>
+    <published>2018-09-28T13:33:26.000Z</published>
+    <updated>2018-09-28T13:35:16.424Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;tar命令详解&lt;br&gt;
+    
+    </summary>
+    
+      <category term="linux" scheme="http://joycessh.xyz/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="http://joycessh.xyz/tags/linux/"/>
+    
+  </entry>
   
   <entry>
     <title>Hadoop学习笔记(一)</title>
