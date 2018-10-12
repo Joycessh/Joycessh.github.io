@@ -7,7 +7,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://joycessh.xyz/"/>
-  <updated>2018-09-28T13:35:16.424Z</updated>
+  <updated>2018-10-12T14:38:29.345Z</updated>
   <id>http://joycessh.xyz/</id>
   
   <author>
@@ -16,6 +16,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CentOS系统下安装mysql的详细步骤</title>
+    <link href="http://joycessh.xyz/CentOS%E7%B3%BB%E7%BB%9F%E4%B8%8B%E5%AE%89%E8%A3%85mysql%E7%9A%84%E8%AF%A6%E7%BB%86%E6%AD%A5%E9%AA%A4.html"/>
+    <id>http://joycessh.xyz/CentOS系统下安装mysql的详细步骤.html</id>
+    <published>2018-10-12T14:37:25.000Z</published>
+    <updated>2018-10-12T14:38:29.345Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文记录的是我结合网络上的资料在CentOS系统安装mysql的步骤说明&lt;br&gt;
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://joycessh.xyz/categories/mysql/"/>
+    
+    
+      <category term="mysql" scheme="http://joycessh.xyz/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>linux学习之tar命令详解</title>

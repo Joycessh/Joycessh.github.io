@@ -12,7 +12,7 @@
     
     
     
-    <title>linux学习之tar命令详解 | Joycessh</title>
+    <title>CentOS系统下安装mysql的详细步骤 | Joycessh</title>
     <link href=”http://joycessh.xyz“ rel=”prefetch” />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -212,13 +212,13 @@
         <i class="fa fa-home"></i>
         <a href="http://joycessh.xyz">Joycessh</a>
         >
-        <span>linux学习之tar命令详解</span>
+        <span>CentOS系统下安装mysql的详细步骤</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/linux学习之tar命令详解.html">linux学习之tar命令详解</a>
+                <a href="/CentOS系统下安装mysql的详细步骤.html">CentOS系统下安装mysql的详细步骤</a>
             </h1>
         </div>
         <div class="tag-article">
@@ -226,12 +226,12 @@
             <span class="label label-gal">
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/linux/">linux</a>
+                <a href="/tags/mysql/">mysql</a>
                 
             </span>
             
             <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2018-09-28
+                <i class="fa fa-calendar"></i> 2018-10-12
             </span>
             
         </div>
@@ -241,17 +241,17 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/linux学习之tar命令详解.html">linux学习之tar命令详解</a>
+                    <a href="/CentOS系统下安装mysql的详细步骤.html">CentOS系统下安装mysql的详细步骤</a>
                 </h4>
             </div>
             <p>
-                <i class="fa fa-calendar"></i> 2018-09-28
+                <i class="fa fa-calendar"></i> 2018-10-12
             </p>
             <p>
                 
                 <i class="fa fa-tags"></i>
                 
-                <a href="/tags/linux/">linux</a>
+                <a href="/tags/mysql/">mysql</a>
                 
                 
                 
@@ -259,31 +259,66 @@
         </center>
     </div>
     <div class="content-article">
-        <p>tar命令详解<br><a id="more"></a></p>
-<h1 id="在linux下-tar是常用的解压缩命令-格式：tar-主选项-辅选项-文件或目录-下面开始介绍tar命令的参数选项以及用法"><a href="#在linux下-tar是常用的解压缩命令-格式：tar-主选项-辅选项-文件或目录-下面开始介绍tar命令的参数选项以及用法" class="headerlink" title="在linux下,tar是常用的解压缩命令,格式：tar [主选项+辅选项] 文件或目录,下面开始介绍tar命令的参数选项以及用法."></a>在linux下,tar是常用的解压缩命令,格式：tar [主选项+辅选项] 文件或目录,下面开始介绍tar命令的参数选项以及用法.</h1><h2 id="主选项-主选项是必须要有-压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个"><a href="#主选项-主选项是必须要有-压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个" class="headerlink" title="主选项(主选项是必须要有,压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个)"></a>主选项(主选项是必须要有,压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个)</h2><ul>
-<li>-c 创建新的档案文件</li>
-<li>-r 把要存档的文件追加到档案文件的末尾</li>
-<li>-t 列出档案文件的内容，查看已经备份了哪些文件</li>
-<li>-u 更新文件。就是说，用新增的文件取代原备份文件，如果在备份文件中找不到要更新的文件，则把它追加到备份文件的最后</li>
-<li>-x 从档案文件中释放文件</li>
+        <p>本文记录的是我结合网络上的资料在CentOS系统安装mysql的步骤说明<br><a id="more"></a></p>
+<h2 id="操作环境"><a href="#操作环境" class="headerlink" title="操作环境"></a>操作环境</h2><ul>
+<li>CentOS-6.5-x86_64</li>
+<li>mysql-5.6.41</li>
 </ul>
-<h2 id="辅助选项-辅助选项是可选"><a href="#辅助选项-辅助选项是可选" class="headerlink" title="辅助选项(辅助选项是可选)"></a>辅助选项(辅助选项是可选)</h2><ul>
-<li>-f 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。</li>
-<li>-v 显示详细信息</li>
-<li>-j 代表使用‘bzip2’程序进行文件的压缩</li>
-<li>-z 用gzip来压缩/解压缩文件</li>
-<li>-Z 用 compress 对存档压缩或解压</li>
+<h2 id="mysql的安装包版本为：mysql-5-6-41-linux-glibc2-12-x86-64-tar-gz"><a href="#mysql的安装包版本为：mysql-5-6-41-linux-glibc2-12-x86-64-tar-gz" class="headerlink" title="mysql的安装包版本为：mysql-5.6.41-linux-glibc2.12-x86_64.tar.gz"></a>mysql的安装包版本为：<code>mysql-5.6.41-linux-glibc2.12-x86_64.tar.gz</code></h2><p>  下载地址<a href="https://dev.mysql.com/downloads/mysql/5.6.html#downloads" target="_blank" rel="noopener">https://dev.mysql.com/downloads/mysql/5.6.html#downloads</a></p>
+<h2 id="详细安装步骤："><a href="#详细安装步骤：" class="headerlink" title="详细安装步骤："></a>详细安装步骤：</h2><ol>
+<li><p>添加mysql用户组和mysql用户</p>
+<ul>
+<li><code># groupadd mysql</code></li>
+<li><code># useradd -r -g mysql mysql</code></li>
 </ul>
-<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><ol>
-<li><p>将当前目录下所有.txt文件打包并压缩归档到文件this.tar.gz</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar zcvf this.tar.gz ./*.txt</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>将当前目录下的all.tar.gz中的文件解压到指定目录/usr/local</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf all.tar.zip -C /usr/local</span><br></pre></td></tr></table></figure>
+<li><p>把mysql二进制文件解压到目录：<code>/usr/local</code></p>
+<ul>
+<li><code>tar zxvf mysql-5.6.41-linux-glibc2.12-x86_64.tar.gz -C /usr/local</code></li>
+</ul>
+<p>重命名</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cd /usr/local</span><br><span class="line"># mv mysql-5.6.41-linux-glibc2.12-x86_64 mysql</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>修改目录<code>/usr/local/mysql</code>的所属用户和组别</p>
+<ul>
+<li><code># chown -R mysql:mysql /usr/local/mysql</code></li>
+</ul>
+</li>
+<li><p>mysql初始化</p>
+<ul>
+<li>以mysql用户执行脚本<code>mysql_install_db</code>，目录：<code>/usr/local/mysql</code></li>
+<li><code># ./scripts/mysql_install_db --user=mysql --basedir=/usr/local/mysql/ --datadir=/var/lib/mysql/</code></li>
+</ul>
+</li>
+<li><p>复制mysql 启动脚本mysql.server 到/etc/init.d/mysqld，并修改权限</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># cp support-files/mysql.server /etc/init.d/mysqld</span><br><span class="line"># chmod 755 /etc/init.d/mysqld</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>配置mysql，修改/etc/my.conf</p>
+<ul>
+<li><code># cp support-files/my-default.cnf  /etc/my.cnf</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line">basedir=/usr/local/mysql</span><br><span class="line">datadir=/var/lib/mysql</span><br><span class="line">socket=/var/lib/mysql/mysql.sock</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>通过chkconfig命令将mysqld服务加入到自启动服务项中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># cd /etc/init.d</span><br><span class="line"># chkconfig --add mysqld</span><br><span class="line">检查是否成功将mysql加入自启动服务</span><br><span class="line"># chkconfig --list mysqld</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置环境变量，修改<code>/etc/profile</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># vim /etc/bash_profile</span><br><span class="line">export MYSQL_HOME=/usr/local/mysql</span><br><span class="line">export PATH=$PATH:$MYSQL_HOME/bin</span><br></pre></td></tr></table></figure>
+<p>重新加载<br><code># source /etc/profile</code></p>
+</li>
+<li><p>启动mysql服务<br><code>service mysqld start</code><br><code># mysql</code></p>
 </li>
 </ol>
-<h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">tar –cvf all.tar file //将文件打包为all.tar</span><br><span class="line"></span><br><span class="line">tar –czf all.tar.gz file //将目录里所有文件打包成all.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为all.tar.gz</span><br><span class="line"></span><br><span class="line">tar –cjf all.tar.bz2 file //将目录里所有文件打包成all.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为all.tar.bz2</span><br><span class="line"></span><br><span class="line">tar –cZf all.tar.Z file //将目录里所有文件打包成all.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为all.tar.Z</span><br><span class="line"></span><br><span class="line">rar a all.rar file //压缩为rar格式</span><br><span class="line"></span><br><span class="line">zip all.zip file //压缩为zip格式</span><br></pre></td></tr></table></figure>
-<h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">tar –xvf file.tar //解压 tar包</span><br><span class="line"></span><br><span class="line">tar -xzvf file.tar.gz //解压tar.gz</span><br><span class="line"></span><br><span class="line">tar -xjvf file.tar.bz2 //解压 tar.bz2</span><br><span class="line"></span><br><span class="line">tar –xZvf file.tar.Z //解压tar.Z</span><br><span class="line"></span><br><span class="line">unrar e file.rar //解压rar</span><br><span class="line"></span><br><span class="line">unzip file.zip //解压zip</span><br><span class="line"></span><br><span class="line">bzip2 -dk file.bz2 //解压bz2, -k为保留压缩包</span><br><span class="line"></span><br><span class="line">bunzip2 -vk file.bz2 //解压bz2, -k为保留压缩包, -v为显示详细信息</span><br></pre></td></tr></table></figure>
+<h2 id="报错及解决办法"><a href="#报错及解决办法" class="headerlink" title="报错及解决办法"></a>报错及解决办法</h2><ul>
+<li><p>在登录时报错：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ERROR 2002 (HY000): Can&apos;t connect to local MySQL server through socket &apos;/tmp/mysql.sock&apos; (2)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>解决办法：修改/etc/my.conf,添加以下内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[mysql]</span><br><span class="line">socket=/var/lib/mysql/mysql.sock</span><br><span class="line">port=3306</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>注：[mysqld]”是针对服务端进行设置，[mysql]”是针对客户端访问进行设置</p>
+</li>
+</ul>
 
     </div>
 </article>
@@ -294,7 +329,7 @@
 <script>
 	if(!window.commentConfig) {
       window.commentConfig = {}
-      window.commentConfig.title = 'linux学习之tar命令详解'
+      window.commentConfig.title = 'CentOS系统下安装mysql的详细步骤'
     }
 </script>
 
@@ -498,29 +533,29 @@
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
                 <li class="">
-                    <a href="/linux学习之tar命令详解.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/CentOS系统下安装mysql的详细步骤.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 <li class="">
-                    <a href="/linux学习之tar命令详解.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/CentOS系统下安装mysql的详细步骤.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 <li class="">
-                    <a href="/linux学习之tar命令详解.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/CentOS系统下安装mysql的详细步骤.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/mysql/" style="font-size: 18.173113391215765px;" class="tag-cloud-link">mysql</a>
+    <a href="/tags/mysql/" style="font-size: 8.124595823690147px;" class="tag-cloud-link">mysql</a>
     
-    <a href="/tags/linux/" style="font-size: 19.377463606004092px;" class="tag-cloud-link">linux</a>
+    <a href="/tags/linux/" style="font-size: 14.42426843302033px;" class="tag-cloud-link">linux</a>
     
-    <a href="/tags/virtualbox/" style="font-size: 10.430046741631495px;" class="tag-cloud-link">virtualbox</a>
+    <a href="/tags/virtualbox/" style="font-size: 17.574780578897702px;" class="tag-cloud-link">virtualbox</a>
     
-    <a href="/tags/Hexo/" style="font-size: 13.064348478807513px;" class="tag-cloud-link">Hexo</a>
+    <a href="/tags/Hexo/" style="font-size: 11.439322988929169px;" class="tag-cloud-link">Hexo</a>
     
-    <a href="/tags/Hadoop/" style="font-size: 8.719936427052264px;" class="tag-cloud-link">Hadoop</a>
+    <a href="/tags/Hadoop/" style="font-size: 11.473579092733615px;" class="tag-cloud-link">Hadoop</a>
     
-    <a href="/tags/JavaScript/" style="font-size: 19.03309471034475px;" class="tag-cloud-link">JavaScript</a>
+    <a href="/tags/JavaScript/" style="font-size: 17.687081513902285px;" class="tag-cloud-link">JavaScript</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
@@ -629,7 +664,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = 'Fri Sep 28 2018 21:33:26 GMT+0800'
+      window.commentConfig.id = 'Fri Oct 12 2018 22:37:25 GMT+0800'
       window.commentConfig.owner = 'Joycessh'
       window.commentConfig.repo = 'Joycessh.github.io'
       window.commentConfig.client_id = 'fa0ea6a5655205183eab'
@@ -637,7 +672,7 @@
       window.commentConfig.redirect_uri = ''
     } else {
       window.commentConfig = {
-      	id: 'Fri Sep 28 2018 21:33:26 GMT+0800',
+      	id: 'Fri Oct 12 2018 22:37:25 GMT+0800',
         owner: 'Joycessh',
         repo: 'Joycessh.github.io',
         client_id: 'fa0ea6a5655205183eab',

@@ -12,7 +12,7 @@
     
     
     
-    <title>linux学习之tar命令详解 | Joycessh</title>
+    <title>categories: mysql | Joycessh</title>
     <link href=”http://joycessh.xyz“ rel=”prefetch” />
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -206,34 +206,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 gal-right" id="mainstay">
-                    
-<article class="article well article-body" id="article">
+                    <article class="article well article-body" id="article-category">
     <div class="breadcrumb">
         <i class="fa fa-home"></i>
         <a href="http://joycessh.xyz">Joycessh</a>
         >
-        <span>linux学习之tar命令详解</span>
+        <span>目录</span>
     </div>
     <!-- 大型设备详细文章 -->
     <div class="hidden-xs">
         <div class="title-article">
             <h1>
-                <a href="/linux学习之tar命令详解.html">linux学习之tar命令详解</a>
+                <a href="/categories/mysql/index.html">mysql</a>
             </h1>
-        </div>
-        <div class="tag-article">
-            
-            <span class="label label-gal">
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux/">linux</a>
-                
-            </span>
-            
-            <span class="label label-gal">
-                <i class="fa fa-calendar"></i> 2018-09-28
-            </span>
-            
         </div>
     </div>
     <!-- 小型设备详细文章 -->
@@ -241,63 +226,21 @@
         <center>
             <div class="title-article">
                 <h4>
-                    <a href="/linux学习之tar命令详解.html">linux学习之tar命令详解</a>
+                    <a href="/categories/mysql/index.html">mysql</a>
                 </h4>
             </div>
-            <p>
-                <i class="fa fa-calendar"></i> 2018-09-28
-            </p>
-            <p>
-                
-                <i class="fa fa-tags"></i>
-                
-                <a href="/tags/linux/">linux</a>
-                
-                
-                
-            </p>
         </center>
     </div>
-    <div class="content-article">
-        <p>tar命令详解<br><a id="more"></a></p>
-<h1 id="在linux下-tar是常用的解压缩命令-格式：tar-主选项-辅选项-文件或目录-下面开始介绍tar命令的参数选项以及用法"><a href="#在linux下-tar是常用的解压缩命令-格式：tar-主选项-辅选项-文件或目录-下面开始介绍tar命令的参数选项以及用法" class="headerlink" title="在linux下,tar是常用的解压缩命令,格式：tar [主选项+辅选项] 文件或目录,下面开始介绍tar命令的参数选项以及用法."></a>在linux下,tar是常用的解压缩命令,格式：tar [主选项+辅选项] 文件或目录,下面开始介绍tar命令的参数选项以及用法.</h1><h2 id="主选项-主选项是必须要有-压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个"><a href="#主选项-主选项是必须要有-压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个" class="headerlink" title="主选项(主选项是必须要有,压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个)"></a>主选项(主选项是必须要有,压缩解压都要用到其中一个，可以和别的命令连用但只能用其中一个)</h2><ul>
-<li>-c 创建新的档案文件</li>
-<li>-r 把要存档的文件追加到档案文件的末尾</li>
-<li>-t 列出档案文件的内容，查看已经备份了哪些文件</li>
-<li>-u 更新文件。就是说，用新增的文件取代原备份文件，如果在备份文件中找不到要更新的文件，则把它追加到备份文件的最后</li>
-<li>-x 从档案文件中释放文件</li>
-</ul>
-<h2 id="辅助选项-辅助选项是可选"><a href="#辅助选项-辅助选项是可选" class="headerlink" title="辅助选项(辅助选项是可选)"></a>辅助选项(辅助选项是可选)</h2><ul>
-<li>-f 使用档案名字，切记，这个参数是最后一个参数，后面只能接档案名。</li>
-<li>-v 显示详细信息</li>
-<li>-j 代表使用‘bzip2’程序进行文件的压缩</li>
-<li>-z 用gzip来压缩/解压缩文件</li>
-<li>-Z 用 compress 对存档压缩或解压</li>
-</ul>
-<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><ol>
-<li><p>将当前目录下所有.txt文件打包并压缩归档到文件this.tar.gz</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar zcvf this.tar.gz ./*.txt</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>将当前目录下的all.tar.gz中的文件解压到指定目录/usr/local</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf all.tar.zip -C /usr/local</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<h2 id="压缩"><a href="#压缩" class="headerlink" title="压缩"></a>压缩</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">tar –cvf all.tar file //将文件打包为all.tar</span><br><span class="line"></span><br><span class="line">tar –czf all.tar.gz file //将目录里所有文件打包成all.tar后，并且将其用gzip压缩，生成一个gzip压缩过的包，命名为all.tar.gz</span><br><span class="line"></span><br><span class="line">tar –cjf all.tar.bz2 file //将目录里所有文件打包成all.tar后，并且将其用bzip2压缩，生成一个bzip2压缩过的包，命名为all.tar.bz2</span><br><span class="line"></span><br><span class="line">tar –cZf all.tar.Z file //将目录里所有文件打包成all.tar后，并且将其用compress压缩，生成一个umcompress压缩过的包，命名为all.tar.Z</span><br><span class="line"></span><br><span class="line">rar a all.rar file //压缩为rar格式</span><br><span class="line"></span><br><span class="line">zip all.zip file //压缩为zip格式</span><br></pre></td></tr></table></figure>
-<h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">tar –xvf file.tar //解压 tar包</span><br><span class="line"></span><br><span class="line">tar -xzvf file.tar.gz //解压tar.gz</span><br><span class="line"></span><br><span class="line">tar -xjvf file.tar.bz2 //解压 tar.bz2</span><br><span class="line"></span><br><span class="line">tar –xZvf file.tar.Z //解压tar.Z</span><br><span class="line"></span><br><span class="line">unrar e file.rar //解压rar</span><br><span class="line"></span><br><span class="line">unzip file.zip //解压zip</span><br><span class="line"></span><br><span class="line">bzip2 -dk file.bz2 //解压bz2, -k为保留压缩包</span><br><span class="line"></span><br><span class="line">bunzip2 -vk file.bz2 //解压bz2, -k为保留压缩包, -v为显示详细信息</span><br></pre></td></tr></table></figure>
-
+    <div class="content-article" style="margin-top: 30px;">
+        <div class="alert alert-info" style="font-size: 14px; line-height: 2; font-weight: bold;">
+            
+            <a href="/CentOS系统下安装mysql的详细步骤.html">CentOS系统下安装mysql的详细步骤</a>
+            <br>
+            
+            
+        </div>
     </div>
 </article>
-
-
-<div id="comments-template"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script>
-	if(!window.commentConfig) {
-      window.commentConfig = {}
-      window.commentConfig.title = 'linux学习之tar命令详解'
-    }
-</script>
-
                 </div>
                 <aside class="col-md-4 gal-left" id="sidebar">
     <!-- 此为sidebar的搜索框, 非搜索结果页面 -->
@@ -498,29 +441,29 @@
         <div class="panel panel-gal hidden-xs" data-aos="fade-up" data-aos-duration="2000">
             <ul class="nav nav-pills pills-gal">
                 <li class="">
-                    <a href="/linux学习之tar命令详解.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
+                    <a href="/categories/mysql/index.html#sidebar-tags" data-toggle="tab" id="tags-tab">热门标签</a>
                 </li>
                 <li class="">
-                    <a href="/linux学习之tar命令详解.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
+                    <a href="/categories/mysql/index.html#sidebar-friend-links" data-toggle="tab" id="friend-links-tab">友情链接</a>
                 </li>
                 <li class="">
-                    <a href="/linux学习之tar命令详解.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
+                    <a href="/categories/mysql/index.html#sidebar-links" data-toggle="tab" id="links-tab">个人链接</a>
                 </li>
             </ul>
             <div class="tab-content">
                 <div class="cloud-tags tab-pane nav bs-sidenav fade" id="sidebar-tags">
     
-    <a href="/tags/mysql/" style="font-size: 18.173113391215765px;" class="tag-cloud-link">mysql</a>
+    <a href="/tags/mysql/" style="font-size: 14.196081766255483px;" class="tag-cloud-link">mysql</a>
     
-    <a href="/tags/linux/" style="font-size: 19.377463606004092px;" class="tag-cloud-link">linux</a>
+    <a href="/tags/linux/" style="font-size: 10.66719532155129px;" class="tag-cloud-link">linux</a>
     
-    <a href="/tags/virtualbox/" style="font-size: 10.430046741631495px;" class="tag-cloud-link">virtualbox</a>
+    <a href="/tags/virtualbox/" style="font-size: 19.6444444604016px;" class="tag-cloud-link">virtualbox</a>
     
-    <a href="/tags/Hexo/" style="font-size: 13.064348478807513px;" class="tag-cloud-link">Hexo</a>
+    <a href="/tags/Hexo/" style="font-size: 16.361954630213702px;" class="tag-cloud-link">Hexo</a>
     
-    <a href="/tags/Hadoop/" style="font-size: 8.719936427052264px;" class="tag-cloud-link">Hadoop</a>
+    <a href="/tags/Hadoop/" style="font-size: 10.540679171437827px;" class="tag-cloud-link">Hadoop</a>
     
-    <a href="/tags/JavaScript/" style="font-size: 19.03309471034475px;" class="tag-cloud-link">JavaScript</a>
+    <a href="/tags/JavaScript/" style="font-size: 9.439881143206616px;" class="tag-cloud-link">JavaScript</a>
     
 </div>
                 <div class="friend-links tab-pane nav bs-sidenav fade" id="sidebar-friend-links">
@@ -629,7 +572,7 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     if(window.commentConfig) {
-      window.commentConfig.id = 'Fri Sep 28 2018 21:33:26 GMT+0800'
+      window.commentConfig.id = ''
       window.commentConfig.owner = 'Joycessh'
       window.commentConfig.repo = 'Joycessh.github.io'
       window.commentConfig.client_id = 'fa0ea6a5655205183eab'
@@ -637,7 +580,7 @@
       window.commentConfig.redirect_uri = ''
     } else {
       window.commentConfig = {
-      	id: 'Fri Sep 28 2018 21:33:26 GMT+0800',
+      	id: '',
         owner: 'Joycessh',
         repo: 'Joycessh.github.io',
         client_id: 'fa0ea6a5655205183eab',
